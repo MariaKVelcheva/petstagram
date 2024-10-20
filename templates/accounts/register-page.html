@@ -1,0 +1,27 @@
+{% extends 'common/home-page.html' %}
+{% load static %}
+
+{% block content %}
+<div class="login-register-div" style="padding: 100px 600px">
+        <div class="login-register-box">
+            <h1>Petstagram</h1>
+
+            <form action="">
+                <input type="text" placeholder="Username">
+
+                <input type="email" placeholder="Email">
+
+                <input type="password" placeholder="Password">
+
+                <input type="password" placeholder="Repeat Password">
+
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <div class="second-option">
+
+            <p>Have an account? <a href="{% url 'login' %}">Log in</a></p>
+        </div>
+    </div>
+{% endblock %}

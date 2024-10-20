@@ -1,0 +1,15 @@
+{% extends 'common/home-page.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="not-found">
+        <h1>
+            Uh oh,<br> something broke.
+        </h1>
+
+        <h3>Error 404 - page not found.</h3>
+        <a href="{% url 'home-page' %}">
+            <button>Return to Petstagram</button>
+        </a>
+    </div>
+{% endblock %}
